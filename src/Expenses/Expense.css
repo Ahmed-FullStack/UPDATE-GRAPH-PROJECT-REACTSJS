@@ -1,0 +1,22 @@
+.expense-item {
+	display: flex;
+	width: min(93%, 700px);
+	margin: 0 auto;
+	background-color: rgb(167, 208, 241);
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	user-select: none;
+	transition: transform 200ms ease-out;
+}
+
+.expense__description {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.expense-item:hover {
+	transform: scale(1.05);
+}

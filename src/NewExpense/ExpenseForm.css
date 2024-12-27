@@ -1,0 +1,65 @@
+.expenses-form {
+	width: min(90%, 800px);
+	margin: 2em auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	align-items: center;
+}
+.input__flex {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2em;
+	justify-content: space-between;
+}
+.input__info {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 45%;
+	gap: 0.8em;
+	color: #fff;
+}
+
+.expenses__label {
+	font-size: 1.2rem;
+}
+
+.input__expenses {
+	outline: none;
+}
+
+.controls {
+	font-size: 1.3rem;
+	background-color: rgb(194, 224, 250);
+	box-shadow: 0 8px 20px hsl(0 0% 0% / 0.1);
+}
+.left {
+	border-radius: 10px 0 0 10px;
+}
+.right {
+	border-radius: 0 10px 10px 0;
+}
+.expense__btn {
+	padding: 0.8em 1em;
+	border-radius: 100vw;
+	background-color: rgb(176, 255, 255);
+	transition: background-color 200ms ease-out, transform 50ms ease-out;
+}
+.expense__btn:hover {
+	background-color: rgb(122, 255, 255);
+}
+.expense__btn:active {
+	background-color: rgb(84, 252, 252);
+	transform: scale(0.9);
+}
+/* Chrome, Safari, Edge, Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: none;
+}

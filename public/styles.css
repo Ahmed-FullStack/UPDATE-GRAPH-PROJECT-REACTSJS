@@ -1,0 +1,80 @@
+/* Css Reset File */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Google+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--reset-anchor-clr: #000;
+	--reset-input-outline: hsl(199, 100%, 76%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: 'Google Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+	-webkit-tap-highlight-color: transparent;
+	background-color: rgb(16, 23, 31);
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	line-height: 1.3;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	color: var(--reset-anchor-clr);
+	display: inline-block;
+	font-size: 1.1rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	border: none;
+	font-size: 1rem;
+	padding: 0.5em 1em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+input {
+	border: none;
+	font-size: 1.2rem;
+	padding: 0.5em 0.8em;
+	border-radius: 8px;
+	background-color: hsl(220, 100%, 97%);
+	outline: 1.8px solid var(--reset-input-outline);
+	box-shadow: 0 8px 20px hsl(0 0% 0% / 0.1);
+	transition: box-shadow 200ms ease-out;
+}
+
+input:focus-visible {
+	box-shadow: 0 12px 40px -5px rgb(0, 0, 0);
+}
+
+:where(:focus) {
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}

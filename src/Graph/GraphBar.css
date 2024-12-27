@@ -1,0 +1,67 @@
+.graph-bar {
+	height: 100%;
+	user-select: none;
+	width: 18px;
+	border-radius: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+.graph-bar__inner {
+	border: 3px solid #4826b9;
+	height: 100%;
+	border-radius: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.hover {
+	width: max-content;
+	padding: 1em 0.8em;
+	border-radius: 10px;
+	color: #fff;
+	opacity: 1;
+	transform: translateY(-110%);
+	transform-origin: top;
+	backdrop-filter: blur(2em);
+	background-color: hsl(210 39% 12% / 0.2);
+
+	transition: opacity 300ms ease-out,
+		transform 200ms cubic-bezier(0.85, 0, 0, 1) 400ms;
+}
+.graph .graph-bar:nth-of-type(n + 11) .overflow {
+	left: -260%;
+}
+.overflow {
+	z-index: 3;
+	overflow-y: hidden;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.hover > * {
+	margin: 0;
+}
+
+.graph-bar:hover .hover {
+	transform: translateY(0);
+	opacity: 1;
+}
+.graph-bar__label {
+	font-size: 0.8rem;
+}
+
+.graph-bar__fill {
+	width: 100%;
+	height: var(--height, 0%);
+	border-radius: 100vh;
+	transition: height 480ms cubic-bezier(0.12, 1.1, 0.5, 1);
+	background-color: #4826b9;
+}
+
+.no-pointer-events {
+	pointer-events: none;
+}

@@ -1,0 +1,9 @@
+.expense-list {
+	padding: 2em 0;
+	background-color: hsl(220, 3%, 18%);
+	width: min(90%, 800px);
+	margin: 2em auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
